@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1c1a">
+  <meta name="description" content="Dulce e Edson. Uma celebração de amor no dia 12 de dezembro de 2026.">
+  <meta property="og:title" content="Dulce & Edson">
+  <meta property="og:description" content="Uma nova etapa, celebrada ao lado de quem amamos.">
+  <meta property="og:image" content="assets/images/maos-alianca-desktop.webp">
+  <title>Dulce & Edson | 12 de Dezembro de 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="is-loading">
+  <div class="loader" id="loader" aria-label="Convite de Dulce e Edson">
+    <div class="loader-content">
+      <p>Dulce <span>&amp;</span> Edson</p>
+      <p class="loader-message" id="loaderMessage">Um convite para partilhar este dia consigo</p>
+      <button class="loader-open" id="openInvitation" type="button">Abrir convite</button>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+      <small id="loaderHint">Toque para entrar e ouvir a nossa música</small>
+    </div>
+  </div>
+
+  <audio id="bgAudio" preload="auto" loop>
+    <source src="assets/audio/yola-semedo-meu-amor.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-toggle" id="musicButton" type="button" aria-pressed="false" aria-label="Tocar música de fundo">
+    <span class="music-note" aria-hidden="true">♫</span>
+    <span id="musicLabel">Ouvir música</span>
+  </button>
+
+  <header class="hero" id="inicio">
+    <picture class="hero-photo">
+      <source media="(max-width: 640px)" srcset="assets/images/maos-alianca-mobile.webp">
+      <img src="assets/images/maos-alianca-desktop.webp" alt="" fetchpriority="high">
+    </picture>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Um amor, uma vida</p>
+      <h1>Dulce <span>&amp;</span> Edson</h1>
+      <p class="hero-copy">Uma nova etapa, celebrada ao lado de quem amamos.</p>
+      <a class="hero-link" href="#historia">Conheça a nossa história</a>
+    </div>
+    <p class="hero-date"><span>12</span> <i aria-hidden="true"></i> Dezembro 2026</p>
+  </header>
+
+  <main>
+    <section class="story-section" id="historia" aria-labelledby="story-title">
+      <div class="story-copy" data-reveal>
+        <p class="eyebrow">O nosso caminho</p>
+        <h2 id="story-title">O amor vive<br>nas coisas <em>simples.</em></h2>
+        <p>Nos dias partilhados, nos sonhos que crescem e na escolha de caminharmos lado a lado. É este amor que queremos celebrar com as pessoas que fazem parte da nossa vida.</p>
+        <p class="signature">Dulce <span>&amp;</span> Edson</p>
+      </div>
+      <div class="story-photos" aria-label="Fotografias de Dulce e Edson" data-reveal>
+        <figure>
+          <img src="assets/images/dulce-edson-brinde.jpg" alt="Dulce e Edson partilham um brinde rodeados de flores" loading="lazy" decoding="async">
+          <figcaption>Um brinde ao que vivemos</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/dulce-edson-juntos.jpg" alt="Dulce e Edson juntos, num momento descontraído" loading="lazy" decoding="async">
+          <figcaption>E a tudo o que vem</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="date-section" id="dia" aria-labelledby="date-title" data-reveal>
+      <p class="eyebrow">Uma data para guardar</p>
+      <h2 id="date-title"><span>12</span><span class="date-month">Dezembro<br><small>2026</small></span></h2>
+      <p class="date-weekday">Sábado</p>
+      <p class="date-note">Estamos a preparar este dia com muito carinho.<br>Será uma alegria partilhar esta celebração consigo.</p>
+      <a class="calendar-link" id="calendarLink" href="#dia" download="Dulce-e-Edson-12-Dezembro-2026.ics">Guardar a data</a>
+    </section>
+
+    <section class="event-section" id="programa" aria-labelledby="program-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">O grande dia</p>
+        <h2 class="section-title" id="program-title">Momentos para<br><em>celebrar juntos.</em></h2>
+        <p>Começamos com uma celebração religiosa e continuamos este dia especial ao lado de quem amamos.</p>
+      </div>
+      <div class="event-grid event-grid--schedule" id="eventDetails">
+        <article class="event-card" data-reveal>
+          <span class="event-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" focusable="false"><path d="M20 4v8m-4-4h8M5 17 20 8l15 9M9 17v17h22V17M16 34V22h8v12M13 20h14"/></svg>
+          </span>
+          <p class="event-time">11h30</p>
+          <h3>Cerimónia religiosa</h3>
+          <p class="event-place">Paróquia Santa Teresinha do Menino Jesus, Liqueleva</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=3CRX%2BMJR%2C%20Matola%2C%20Mozambique" target="_blank" rel="noopener noreferrer">Abrir no mapa</a>
+        </article>
+        <article class="event-card" data-reveal>
+          <h3>Cerimónia civil<br>&amp; celebração</h3>
+          <div class="venue-moments" aria-label="Momentos da celebração">
+            <div class="venue-moment">
+              <span class="event-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3.5 20v-1.5a5.5 5.5 0 0 1 11 0V20M16 5.5a3 3 0 0 1 0 5.8m1.5 3.1a5.5 5.5 0 0 1 3 4.9V20"/></svg></span>
+              <div><span class="moment-time">14h00</span><p>Recepção dos convidados</p></div>
+            </div>
+            <div class="venue-moment">
+              <span class="event-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></svg></span>
+              <div><span class="moment-time">14h30</span><p>Cerimónia civil</p></div>
+            </div>
+            <div class="venue-moment">
+              <span class="event-moment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 4h16l-2 6a6 6 0 0 1-12 0L4 4Zm8 12v4m-4 0h8"/></svg></span>
+              <div><span class="moment-time">Depois da cerimónia</span><p>Celebração · copo de água</p></div>
+            </div>
+          </div>
+          <p class="event-place">Tela de Aquino, entrada da Vila Verde</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tela%20de%20Aquino%2C%20entrada%20da%20Vila%20Verde%2C%20Matola-Rio%2C%20Mo%C3%A7ambique" target="_blank" rel="noopener noreferrer">Pesquisar no mapa</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="rsvp-intro" data-reveal>
+        <p class="eyebrow">A sua presença importa</p>
+        <h2 class="section-title" id="rsvp-title">Podemos contar<br><em>consigo?</em></h2>
+        <p>Confirme a sua presença. Ao preencher o formulário, uma mensagem ficará pronta para enviar pelo whatsapp.</p>
+      </div>
+      <form class="rsvp-form" id="rsvpForm" data-reveal>
+        <label class="form-field">
+          <span>O seu nome</span>
+          <input type="text" name="guestName" autocomplete="name" placeholder="Nome e apelido" required>
+        </label>
+        <label class="form-field">
+          <span>Vai estar connosco?</span>
+          <select name="attendance" required>
+            <option value="" selected disabled>Escolha uma opção</option>
+            <option value="yes">Sim, confirmo presença</option>
+            <option value="no">Lamento, não poderei estar presente</option>
+          </select>
+        </label>
+        <label class="form-field">
+          <span>Uma nota para os noivos <small>(opcional)</small></span>
+          <textarea name="guestMessage" rows="3" placeholder="Escreva uma mensagem breve"></textarea>
+        </label>
+        <button class="primary-button" type="submit">Preparar confirmação</button>
+        <p class="form-status" id="rsvpStatus" role="status" aria-live="polite">A confirmação será enviada por si através do WhatsApp.</p>
+      </form>
+    </section>
+
+    <section class="gift-section" id="presentes" aria-labelledby="gift-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Com carinho</p>
+        <h2 class="section-title" id="gift-title">O melhor presente<br><em>é estar presente.</em></h2>
+        <p>A sua companhia é o maior presente. Se desejar contribuir para a nossa lua de mel, deixamos aqui os dados bancários.</p>
+      </div>
+      <button class="contribute-button" id="openGiftDialog" type="button" data-reveal>
+        Contribuir para a lua de mel
+      </button>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title" data-reveal>
+      <p class="eyebrow">Até breve</p>
+      <h2 id="closing-title">Esperamos celebrar<br>consigo.</h2>
+      <p>Com carinho,</p>
+      <div class="closing-names">Dulce <span>&amp;</span> Edson</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Dulce &amp; Edson</span>
+    <span>12 · 12 · 2026</span>
+    <a href="#inicio">Voltar ao início</a>
+  </footer>
+
+  <dialog class="gift-dialog" id="giftDialog" aria-labelledby="gift-dialog-title">
+    <div class="gift-dialog-content">
+      <div class="gift-dialog-header">
+        <div>
+          <p class="eyebrow">Um gesto de carinho</p>
+          <h2 id="gift-dialog-title">Lua de mel</h2>
+        </div>
+        <button class="dialog-close" id="closeGiftDialog" type="button" aria-label="Fechar dados bancários">×</button>
+      </div>
+      <p class="dialog-copy">A sua presença é o nosso maior presente. Se desejar contribuir, estes são os nossos dados:</p>
+      <div class="bank-card">
+        <p class="bank-warning">Dados Bancários</p>
+        <dl>
+          <div><dt>Banco</dt><dd>BCI</dd></div>
+          <div><dt>Titular</dt><dd>Dulce &amp; Edson</dd></div>
+          <div><dt>NIB</dt><dd>0000 0000 0000 0000 000</dd></div>
+        </dl>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
