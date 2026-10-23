@@ -96,6 +96,37 @@ function setCalendarDownload() {
 
 setCalendarDownload();
 
+function startCountdown() {
+  const target = new Date("2026-12-12T11:30:00+02:00").getTime();
+  const fields = {
+    days: document.getElementById("countdownDays"),
+    hours: document.getElementById("countdownHours"),
+    minutes: document.getElementById("countdownMinutes"),
+    seconds: document.getElementById("countdownSeconds")
+  };
+  const label = document.getElementById("countdownLabel");
+  let countdownInterval;
+
+  function updateCountdown() {
+    const remaining = Math.max(0, target - Date.now());
+    const totalSeconds = Math.floor(remaining / 1000);
+    fields.days.textContent = String(Math.floor(totalSeconds / 86400)).padStart(3, "0");
+    fields.hours.textContent = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, "0");
+    fields.minutes.textContent = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+    fields.seconds.textContent = String(totalSeconds % 60).padStart(2, "0");
+
+    if (remaining === 0) {
+      label.textContent = "O grande dia chegou";
+      window.clearInterval(countdownInterval);
+    }
+  }
+
+  updateCountdown();
+  if (target > Date.now()) countdownInterval = window.setInterval(updateCountdown, 1000);
+}
+
+startCountdown();
+
 const rsvpForm = document.getElementById("rsvpForm");
 const rsvpStatus = document.getElementById("rsvpStatus");
 
